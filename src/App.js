@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainPage from "./components/page/MainPage";
-import PostView from "./components/page/PostView";
+import MainPage from "./components/pages/MainPage";
+import PostView from "./components/pages/PostView";
 
 function App() {
   return (
