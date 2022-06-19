@@ -1,0 +1,19 @@
+.profile-img {
+  background: url(../../assets/images/profile.jpg) no-repeat center/contain;
+  border-radius: 50%;
+}
+
+.profile-img.lg {
+  width: 80px;
+  height: 80px;
+}
+
+.profile-img.md {
+  width: 44px;
+  height: 44px;
+}
+
+.profile-img.sm {
+  width: 24px;
+  height: 24px;
+}
