@@ -1,0 +1,16 @@
+.top-button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  width: 75px;
+  height: 30px;
+  padding-top: 2.7rem;
+  border: 0;
+  border-radius: 6.4px 6.4px 0 0;
+  background: #37aaec url(../../assets/icons/ArrowTop.svg) no-repeat 50% 0.4rem /
+    3rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
