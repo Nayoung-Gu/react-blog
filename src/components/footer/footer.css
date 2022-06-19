@@ -1,0 +1,13 @@
+footer {
+  background: #fff;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  position: relative;
+}
+
+footer h2 {
+  color: #767676;
+}
