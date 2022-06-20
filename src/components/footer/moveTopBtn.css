@@ -14,3 +14,7 @@
   text-align: center;
   font-weight: bold;
 }
+
+.top-button:active {
+  box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
+}
