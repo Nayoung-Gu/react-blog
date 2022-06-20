@@ -1,8 +1,8 @@
-.logout-btn {
+.login-btn {
   cursor: pointer;
   width: 107px;
   height: 40px;
-  background-color: #fff;
+  background-color: #f9f9f9;
   color: #28303f;
   border: none;
   border-radius: 6.4px;
@@ -12,14 +12,17 @@
   margin-left: 10px;
 }
 
-.logout-btn img {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-  padding-bottom: 3px;
+.login-btn:active {
+  box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
 }
 
-.logout-btn span {
+.login-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.login-btn span {
   font-size: 16px;
   font-weight: bold;
 }

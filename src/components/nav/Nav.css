@@ -1,0 +1,11 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #fff;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}

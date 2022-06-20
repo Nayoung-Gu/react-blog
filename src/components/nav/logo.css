@@ -6,3 +6,7 @@
   padding: 4px;
   border-radius: 6.4px;
 }
+
+.logo:active {
+  box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
+}

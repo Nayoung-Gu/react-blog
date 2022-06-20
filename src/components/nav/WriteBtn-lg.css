@@ -12,11 +12,14 @@
   margin-left: 10px;
 }
 
+.write-btn:active {
+  box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
+}
+
 .write-btn img {
   width: 20px;
   height: 20px;
   margin-right: 8px;
-  padding-bottom: 3px;
 }
 
 .write-btn span {
