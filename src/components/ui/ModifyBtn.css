@@ -1,0 +1,18 @@
+.modify-btn {
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5 url(../../assets/icons/icon-modify.svg) no-repeat center;
+  border: none;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+}
+
+.modify-btn:hover {
+  background: #37aaec url(../../assets/icons/icon-modify-white.svg) no-repeat
+    center;
+}
+
+.modify-btn:active {
+  box-shadow: rgb(55, 160, 236) 0 0 3px 1px;
+  background: #f5f5f5 url(../../assets/icons/icon-modify.svg) no-repeat center;
+}

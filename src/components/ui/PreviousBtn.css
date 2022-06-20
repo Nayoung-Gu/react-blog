@@ -1,0 +1,11 @@
+.previous-button {
+  background: url(../../assets/icons/ArrowLeft-blue.svg) no-repeat center;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+}
+
+.previous-button:active {
+  box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
+}
