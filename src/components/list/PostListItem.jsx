@@ -13,7 +13,8 @@ function PostListItem(props) {
         <img src={img} alt="" />
       </div>
       <div className="contents-wrap">
-        <CategoryBtn />
+        <CategoryBtn theme="Life" className="blue" />
+        <CategoryBtn theme="Style" className="blue" />
         <h3 className="card-title">
           Loremr sit, amet consectetur adipisicing elit. Similique neque fuga
           rem dolor eligendi aute
