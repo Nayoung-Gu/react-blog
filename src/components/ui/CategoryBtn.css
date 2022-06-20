@@ -8,6 +8,10 @@
   margin-right: 4px;
 }
 
+.category-btn:active {
+  box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
+}
+
 .category-btn.blue {
   color: #37aaec;
 }

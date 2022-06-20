@@ -1,0 +1,53 @@
+.about {
+  flex-basis: calc((100% - 2.4rem * 3) / 4);
+  flex-shrink: 0;
+  align-self: flex-start;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding: 1.5rem;
+  max-width: 280px;
+}
+
+.about-profile,
+.about-categories,
+.about-follow {
+  margin-bottom: 60px;
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.user-name {
+  color: #37aaec;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 1.2rem 0;
+}
+
+.user-description {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+.about-categories ul li {
+  display: inline-block;
+}

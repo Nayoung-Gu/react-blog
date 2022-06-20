@@ -3,9 +3,14 @@
   border-radius: 50%;
 }
 
+.profile-img:active {
+  box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
+}
+
 .profile-img.lg {
   width: 80px;
   height: 80px;
+  margin: 0;
 }
 
 .profile-img.md {
