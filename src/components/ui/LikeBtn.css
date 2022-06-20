@@ -1,4 +1,5 @@
 .like-btn {
+  cursor: pointer;
   border: 1px solid #f37c4b;
   background-color: #fff;
   border-radius: 6.4px;
