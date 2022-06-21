@@ -1,16 +1,35 @@
-import data from "../../assets/data.json";
+import Logo from "./Logo";
+import { useState, useEffect } from "react";
+import { ProfileImg_md } from "../ui/ProfileImg";
+import WriteBtn from "./WriteBtn";
+import LoginBtn from "./LoginBtn";
+import LogoutBtn from "./LogoutBtn";
+import RegisterBtn from "./RegisterBtn";
 import "./header.css";
 
 export default function Header() {
+  const [login, setLogin] = useState(true);
+
   return (
-    <header>
-      <div className="header-container">
-        <div className="header-wrapper">
-          <h2 className="header__subtitle">{data.blog.subTitle}</h2>
-          <h1 className="header__maintitle">{data.blog.mainTitle}</h1>
-          <p className="header__description">{data.blog.description}</p>
-        </div>
+    <nav>
+      <Logo />
+      <div>
+        {login ? <ProfileImg_md /> : null}
+        {login ? (
+          <WriteBtn />
+        ) : (
+          <LoginBtn
+            onClick={() => {
+              setLogin(true);
+            }}
+          />
+        )}
+        {login ? (
+          <LogoutBtn onClick={() => setLogin(false)} />
+        ) : (
+          <RegisterBtn />
+        )}
       </div>
-    </header>
+    </nav>
   );
 }
