@@ -3,7 +3,7 @@ import twitter from "../../assets/icons/Twitter.svg";
 import instagram from "../../assets/icons/Instagram.svg";
 import github from "../../assets/icons/Github.svg";
 import { useNavigate } from "react-router-dom";
-import "./SocialBtns.css";
+import "./socialBtns.css";
 
 export default function SocialBtns() {
   const navigate = useNavigate();

@@ -1,4 +1,4 @@
-import "./CategoryBtn.css";
+import "./categoryBtn.css";
 
 export default function CategoryBtn(props) {
   return (

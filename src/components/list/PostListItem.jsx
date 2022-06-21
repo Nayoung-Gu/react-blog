@@ -3,7 +3,7 @@ import CategoryBtn from "../ui/CategoryBtn";
 import img from "../../assets/images/post-img1.jpg";
 import { ProfileImg_sm } from "../ui/ProfileImg";
 import data from "../../assets/data.json";
-import "./PostListItem.css";
+import "./postListItem.css";
 
 function PostListItem(props) {
   const navigate = useNavigate();

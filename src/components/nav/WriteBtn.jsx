@@ -1,4 +1,4 @@
-import "./WriteBtn-lg.css";
+import "./writeBtn.css";
 import icon from "../../assets/icons/icon-modify-white.svg";
 
 export default function WriteBtn() {

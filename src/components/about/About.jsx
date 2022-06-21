@@ -1,7 +1,8 @@
 import { ProfileImg_lg } from "../ui/ProfileImg";
 import CategoryBtn from "../ui/CategoryBtn";
 import SocialBtns from "../ui/SocialBtns";
-import "./About.css";
+import userData from "../../assets/data.json";
+import "./about.css";
 
 export default function About() {
   return (
@@ -9,10 +10,8 @@ export default function About() {
       <div className="about-profile">
         <h3 className="about-title">about me</h3>
         <ProfileImg_lg />
-        <div className="user-name">Chili</div>
-        <p className="user-description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
+        <div className="user-name">{userData.users[0]["name"]}</div>
+        <p className="user-description">{userData.users[0]["userInfo"]}</p>
       </div>
       <div className="about-categories">
         <h3 className="about-title">categories</h3>

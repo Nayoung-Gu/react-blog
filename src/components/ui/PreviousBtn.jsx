@@ -1,4 +1,4 @@
-import "./PreviousBtn.css";
+import "./previousBtn.css";
 import { useNavigate } from "react-router-dom";
 
 export default function PreviousBtn() {

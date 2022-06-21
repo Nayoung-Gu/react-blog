@@ -1,4 +1,4 @@
-import "./Register.css";
+import "./register.css";
 import icon from "../../assets/icons/icon-register.svg";
 
 export default function RegisterBtn() {

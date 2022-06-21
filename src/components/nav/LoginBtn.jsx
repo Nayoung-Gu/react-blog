@@ -1,4 +1,4 @@
-import "./LoginBtn.css";
+import "./loginBtn.css";
 import icon from "../../assets/icons/icon-login.svg";
 
 export default function LoginBtn() {
