@@ -3,14 +3,14 @@ import "./banner.css";
 
 export default function Banner() {
   return (
-    <header>
-      <div className="header-container">
-        <div className="header-wrapper">
-          <h2 className="header__subtitle">{data.blog.subTitle}</h2>
-          <h1 className="header__maintitle">{data.blog.mainTitle}</h1>
-          <p className="header__description">{data.blog.description}</p>
+    <div className="banner">
+      <div className="banner-container">
+        <div className="banner-wrapper">
+          <h2 className="banner-subtitle">{data.blog.subTitle}</h2>
+          <h1 className="banner-maintitle">{data.blog.mainTitle}</h1>
+          <p className="banner-description">{data.blog.description}</p>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
