@@ -1,7 +1,7 @@
-import facebook from "../../assets/icons/Facebook.svg";
-import twitter from "../../assets/icons/Twitter.svg";
-import instagram from "../../assets/icons/Instagram.svg";
-import github from "../../assets/icons/Github.svg";
+import facebook from "../../assets/Facebook.svg";
+import twitter from "../../assets/Twitter.svg";
+import instagram from "../../assets/Instagram.svg";
+import github from "../../assets/Github.svg";
 import { useNavigate } from "react-router-dom";
 import "./socialBtns.css";
 

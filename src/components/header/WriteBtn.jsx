@@ -1,5 +1,5 @@
 import "./writeBtn.css";
-import icon from "../../assets/icons/icon-modify-white.svg";
+import icon from "../../assets/icon-modify-white.svg";
 
 export default function WriteBtn() {
   return (

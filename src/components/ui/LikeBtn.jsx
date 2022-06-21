@@ -1,4 +1,4 @@
-import icon from "../../assets/icons/icon-like.svg";
+import icon from "../../assets/icon-like.svg";
 import "./likeBtn.css";
 
 export default function LikeBtn() {

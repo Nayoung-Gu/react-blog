@@ -5,7 +5,7 @@
   border-radius: 6.4px;
   width: 120px;
   height: 40px;
-  background: url(../../assets/icons/icon-like.svg) no-repeat 25px;
+  background: url(../../assets/icon-like.svg) no-repeat 25px;
   transition: 0.2s ease-in-out;
   font-size: 1rem;
   text-align: right;
@@ -13,12 +13,12 @@
 }
 
 .like-btn:hover {
-  background: #f37c4b url(../../assets/icons/icon-like-white.svg) no-repeat 25px;
+  background: #f37c4b url(../../assets/icon-like-white.svg) no-repeat 25px;
   color: #fff;
 }
 
 .like-btn:active {
-  background: url(../../assets/icons/icon-like.svg) no-repeat 25px;
+  background: url(../../assets/icon-like.svg) no-repeat 25px;
   color: #111;
   box-shadow: #f37c4b 0 0 3px 1px;
 }

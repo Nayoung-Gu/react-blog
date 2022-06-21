@@ -1,5 +1,6 @@
 .previous-button {
-  background: url(../../assets/icons/ArrowLeft-blue.svg) no-repeat center;
+  cursor: pointer;
+  background: url(../../assets/ArrowLeft-blue.svg) no-repeat center;
   width: 52px;
   height: 52px;
   border: none;

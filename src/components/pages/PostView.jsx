@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../nav/Nav";
+import Header from "../header/Header";
 import PreviousBtn from "../ui/PreviousBtn";
 import ModifyBtn from "../ui/ModifyBtn";
 import DeleteBtn from "../ui/DeleteBtn";
@@ -9,7 +9,7 @@ import Footer from "../footer/Footer";
 function PostView() {
   return (
     <div>
-      <Nav />
+      <Header />
       <PreviousBtn />
       <ModifyBtn />
       <DeleteBtn />

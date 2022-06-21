@@ -1,5 +1,5 @@
 import "./logoutBtn.css";
-import icon from "../../assets/icons/icon-logout.svg";
+import icon from "../../assets/icon-logout.svg";
 
 export default function LogoutBtn() {
   return (
