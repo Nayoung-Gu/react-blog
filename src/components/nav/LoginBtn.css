@@ -26,3 +26,23 @@
   font-size: 16px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 640px) {
+  .login-btn {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+
+  .login-btn img {
+    margin-left: 8px;
+  }
+
+  .login-btn span {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+  }
+}
