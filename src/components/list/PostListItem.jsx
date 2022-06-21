@@ -1,27 +1,26 @@
 import { useNavigate } from "react-router-dom";
 import CategoryBtn from "../ui/CategoryBtn";
-import img from "../../assets/images/post-img1.jpg";
+import img from "../../assets/post-img1.jpg";
 import { ProfileImg_sm } from "../ui/ProfileImg";
 import data from "../../assets/data.json";
 import "./postListItem.css";
-
+// import "../../assets/post-img1.jpg";
 function PostListItem(props) {
   const navigate = useNavigate();
 
   return (
     <article className="card" onClick={() => navigate("/post-view")}>
+      {/* <img src={props.thumbnail} /> */}
       <img src={img} alt="" />
-
       <div className="contents-wrap">
-        <CategoryBtn theme="Life" className="blue" />
-        <CategoryBtn theme="Style" className="blue" />
-        <h3 className="card-title">
-          Dipisicing elit. Inventore illum nostrum perferendis.
-        </h3>
+        {props.category.map((item) => {
+          return <CategoryBtn theme={item} className="blue" />;
+        })}
+        <h3 className="card-title">{props.title}</h3>
         <div className="card-detail">
           <ProfileImg_sm />
-          <span className="writer">Chilli</span>
-          <span className="date">2022.04.01</span>
+          <span className="writer">{props.username}</span>
+          <span className="date">{props.created}</span>
         </div>
         <p className="card-content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos

@@ -1,0 +1,20 @@
+import PostListItem from "./PostListItem";
+import "./postList.css";
+import data from "../../assets/data.json";
+
+export default function PostList(props) {
+  return (
+    <ul className="post-list">
+      {data.posts.map((post) => (
+        <li key={post.id}>
+          <PostListItem
+            title={post.title}
+            username={post.userName}
+            created={post.created}
+            category={post.category}
+          />
+        </li>
+      ))}
+    </ul>
+  );
+}
