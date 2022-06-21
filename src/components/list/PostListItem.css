@@ -1,13 +1,11 @@
 .card {
   cursor: pointer;
   width: 270px;
-  height: 400px;
   border-radius: 8px;
   overflow: hidden;
-}
-
-.img-container {
-  text-align: center;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  background-color: #fff;
 }
 
 .card img {
@@ -16,8 +14,11 @@
 }
 
 .contents-wrap {
-  padding: 16px 24px 24px;
+  padding: 1.5rem 1.2rem 1.5rem;
   background-color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 60%;
 }
 
 .card-title {
@@ -62,10 +63,10 @@
   color: #767676;
   font-size: 14px;
   line-height: 19px;
-  max-width: 100%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-break: break-all;
 }
