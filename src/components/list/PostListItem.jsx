@@ -13,8 +13,8 @@ function PostListItem(props) {
       {/* <img src={props.thumbnail} /> */}
       <img src={img} alt="" />
       <div className="contents-wrap">
-        {props.category.map((item) => {
-          return <CategoryBtn theme={item} className="blue" />;
+        {props.category.map((item, index) => {
+          return <CategoryBtn key={index} theme={item} className="blue" />;
         })}
         <h3 className="card-title">{props.title}</h3>
         <div className="card-detail">
