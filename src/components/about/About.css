@@ -1,6 +1,6 @@
 .about {
-  flex-basis: calc((100% - 2.4rem * 3) / 4);
-  flex-shrink: 0;
+  /* flex-basis: calc((100% - 2.4rem * 3) / 4);
+  flex-shrink: 0; */
   align-self: flex-start;
   box-sizing: border-box;
   border-radius: 8px;
@@ -50,4 +50,11 @@
 
 .about-categories ul li {
   display: inline-block;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

@@ -39,3 +39,16 @@
   text-align: center;
   line-height: 1rem;
 }
+
+@media screen and (max-width: 770px) {
+  .banner-wrapper {
+    width: 100%;
+    max-width: calc((100% - 1224px) / 2 + 44rem);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .banner-wrapper {
+    padding: 0 15.5% 140px;
+  }
+}
