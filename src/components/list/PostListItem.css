@@ -1,12 +1,13 @@
 .card {
   cursor: pointer;
   max-width: 270px;
-  min-width: 225px;
+  min-width: 220px;
   min-height: 370px;
   max-height: 410px;
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 .card:active {
@@ -21,9 +22,9 @@
 .contents-wrap {
   padding: 1.5rem;
   background-color: #fff;
-  overflow: hidden;
+  /* overflow: hidden;
   box-sizing: border-box;
-  height: 60%;
+  height: 60%; */
 }
 
 .card-title {
@@ -43,6 +44,12 @@
 .card-detail {
   display: flex;
   align-items: center;
+}
+
+.card-detail img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
 
 .writer,
@@ -76,9 +83,14 @@
   word-break: break-all;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 550px) {
   .card {
-    width: 100%;
-    margin: 0 auto;
+    min-width: 340px;
+    margin: 0 auto 30px;
+    box-sizing: border-box;
+  }
+
+  .card-content {
+    display: none;
   }
 }
