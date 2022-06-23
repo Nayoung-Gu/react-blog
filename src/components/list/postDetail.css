@@ -10,7 +10,7 @@
   background: rgba(0, 0, 20, 0.4);
   width: max-content;
   height: 100%;
-  padding: 3% 10% 0 17%;
+  padding: 70px 13%;
   box-sizing: border-box;
 }
 
@@ -19,6 +19,7 @@
   color: white;
   font-weight: bold;
   font-size: 55px;
+  margin-left: 0.5rem;
 }
 
 .post-banner-inside span:nth-child(2) {
@@ -28,7 +29,7 @@
 
 .post-wrap {
   width: 60rem;
-  max-width: 800px;
+  max-width: 700px;
   margin: -10rem 0 auto 35%;
   padding: 4rem 2rem;
   border-radius: 20px;
@@ -38,10 +39,10 @@
 }
 
 .post-inner {
-  width: 39.2rem;
-  max-width: calc(100% - 8rem);
+  width: fit-content;
   margin: 0 auto;
   font-size: 1.6rem;
+  padding: 0 3rem;
 }
 .author-wrap {
   display: flex;
@@ -81,5 +82,70 @@
 .btn-wrap {
   position: absolute;
   top: 3.5rem;
-  right: 6.5rem;
+  right: 5rem;
+}
+
+@media screen and (max-width: 1260px) {
+  .post-banner-inside {
+    width: 60vw;
+    padding: 70px 10%;
+  }
+
+  .post-banner-date-cont {
+    width: 280px;
+  }
+
+  .post-banner-inside span {
+    display: inline-block;
+    font-size: 35px;
+  }
+
+  .post-banner-inside span:nth-child(2) {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
+  .post-wrap {
+    margin-top: -13rem;
+    width: 50%;
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .post-banner-inside {
+    width: 100%;
+    padding: 70px 0 16px;
+  }
+
+  .post-banner-date-cont {
+    width: 100%;
+    text-align: center;
+  }
+
+  .post-wrap {
+    width: 80%;
+    margin: -13rem auto 0;
+    padding: 2rem 1rem;
+  }
+
+  .post-inner header {
+    width: 100%;
+  }
+
+  .btn-wrap {
+    top: 1.8rem;
+    right: 3rem;
+  }
+
+  .post-inner {
+    padding: 2rem;
+  }
+
+  .author-wrap {
+    margin-left: 20px;
+  }
+
+  .btn-wrap {
+    top: 3.5rem;
+  }
 }

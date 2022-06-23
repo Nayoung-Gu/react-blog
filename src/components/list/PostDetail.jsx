@@ -12,9 +12,11 @@ export default function PostDetail(props) {
     <div>
       <div className="post-banner">
         <div className="post-banner-inside">
-          <span>May</span>
-          <span>25</span>
-          <span>Wednesday</span>
+          <div className="post-banner-date-cont">
+            <span>May</span>
+            <span>25</span>
+            <span>Wednesday</span>
+          </div>
         </div>
       </div>
       <article className="post-wrap">
