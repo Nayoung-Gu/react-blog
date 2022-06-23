@@ -43,7 +43,7 @@
 @media screen and (max-width: 770px) {
   .banner-wrapper {
     width: 100%;
-    max-width: calc((100% - 1224px) / 2 + 44rem);
+    max-width: calc((100% - 1225px) / 2 + 44rem);
   }
 }
 
