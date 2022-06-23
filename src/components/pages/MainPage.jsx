@@ -16,7 +16,7 @@ function MainPage() {
         <About />
         <PostList />
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
