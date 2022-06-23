@@ -14,3 +14,9 @@ body {
     flex-direction: column-reverse;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .main {
+    padding: 0 3rem;
+  }
+}

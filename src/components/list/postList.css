@@ -4,13 +4,14 @@
   gap: 2.4rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .post-list {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 550px) {
   .post-list {
     grid-template-columns: 1fr;
   }
