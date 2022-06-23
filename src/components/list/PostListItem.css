@@ -6,9 +6,11 @@
   max-height: 410px;
   border-radius: 8px;
   overflow: hidden;
-  box-sizing: border-box;
-  padding-bottom: 20px;
   background-color: #fff;
+}
+
+.card:active {
+  box-shadow: rgb(55, 160, 236) 0 0 4px 1px;
 }
 
 .card img {
@@ -61,7 +63,6 @@
 }
 
 .card-content {
-  height: calc(1.4rem * 1.4 * 3);
   margin-top: 1rem;
   text-indent: 0.5em;
   color: #767676;
