@@ -8,6 +8,7 @@ export default function PostList(props) {
       {data.posts.map((post) => (
         <li key={post.id}>
           <PostListItem
+            thumbnail={post.thumbnail}
             title={post.title}
             username={post.userName}
             created={post.created}
