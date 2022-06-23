@@ -1,7 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import CategoryBtn from "../ui/CategoryBtn";
-import { ProfileImg_sm } from "../ui/ProfileImg";
-import data from "../../assets/data.json";
 import "./postListItem.css";
 function PostListItem(props) {
   const navigate = useNavigate();
@@ -15,7 +13,7 @@ function PostListItem(props) {
         })}
         <h3 className="card-title">{props.title}</h3>
         <div className="card-detail">
-          <ProfileImg_sm />
+          <img src={`.${props.profileImg}`} alt="" />
           <span className="writer">{props.username}</span>
           <span className="date">{props.created}</span>
         </div>

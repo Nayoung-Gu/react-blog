@@ -9,3 +9,13 @@ nav div {
   display: flex;
   align-items: center;
 }
+
+.nav-profile-cont img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.nav-profile-cont img:active {
+  box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
+}

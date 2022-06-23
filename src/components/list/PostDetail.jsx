@@ -2,9 +2,9 @@ import PreviousBtn from "../ui/PreviousBtn";
 import ModifyBtn from "../ui/ModifyBtn";
 import DeleteBtn from "../ui/DeleteBtn";
 import LikeBtn from "../ui/LikeBtn";
-import { ProfileImg_sm } from "../ui/ProfileImg";
 import CategoryBtn from "../ui/CategoryBtn";
 import backgroundImg from "../../assets/post-background6.jpg";
+import authorData from "../../assets/data.json";
 import "./postDetail.css";
 
 export default function PostDetail(props) {
@@ -24,7 +24,10 @@ export default function PostDetail(props) {
           <header>
             <PreviousBtn />
             <div className="author-wrap">
-              <ProfileImg_sm />
+              <img
+                src={`.${authorData.posts[5]["profileImg"]}`}
+                alt="글쓴이 프로필 이미지"
+              />
               <span className="writer">Chilli</span>
               <span className="date">2022.05.25</span>
             </div>

@@ -10,6 +10,7 @@ export default function PostList(props) {
           <PostListItem
             thumbnail={post.thumbnail}
             title={post.title}
+            profileImg={post.profileImg}
             username={post.userName}
             created={post.created}
             category={post.category}

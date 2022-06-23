@@ -1,6 +1,5 @@
-import { ProfileImg_lg } from "../ui/ProfileImg";
 import CategoryBtn from "../ui/CategoryBtn";
-import SocialBtns from "../ui/SocialBtns";
+import SocialBtns from "./SocialBtns";
 import userData from "../../assets/data.json";
 import "./about.css";
 
@@ -9,34 +8,23 @@ export default function About() {
     <aside className="about">
       <div className="about-profile">
         <h3 className="about-title">about me</h3>
-        <ProfileImg_lg />
+        <img
+          src={`.${userData.users[0]["profileImg"]}`}
+          alt="나의 프로필 이미지"
+        />
         <div className="user-name">{userData.users[0]["name"]}</div>
         <p className="user-description">{userData.users[0]["userInfo"]}</p>
       </div>
       <div className="about-categories">
         <h3 className="about-title">categories</h3>
         <ul>
-          <li>
-            <CategoryBtn theme="Life" className="grey" />
-          </li>
-          <li>
-            <CategoryBtn theme="Style" className="grey" />
-          </li>
-          <li>
-            <CategoryBtn theme="Tech" className="grey" />
-          </li>
-          <li>
-            <CategoryBtn theme="Sport" className="grey" />
-          </li>
-          <li>
-            <CategoryBtn theme="Photo" className="grey" />
-          </li>
-          <li>
-            <CategoryBtn theme="Develop" className="grey" />
-          </li>
-          <li>
-            <CategoryBtn theme="Music" className="grey" />
-          </li>
+          {userData.users[0]["category"].map((item, index) => {
+            return (
+              <li key={index}>
+                <CategoryBtn theme={item} className="grey" />
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className="about-follow">

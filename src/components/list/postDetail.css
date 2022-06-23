@@ -52,6 +52,12 @@
   margin: 1.5rem 0 0.5rem;
 }
 
+.author-wrap img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
 .post-inner h2 {
   font-size: 2rem;
   font-weight: bold;
