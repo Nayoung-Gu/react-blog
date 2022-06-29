@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import CategoryBtn from "../ui/CategoryBtn";
 import "./postListItem.css";
+
 function PostListItem(props) {
   const navigate = useNavigate();
 
   return (
     <article className="card" onClick={() => navigate("/post-view")}>
-      <img src={`.${props.thumbnail}`} />
+      <img src={`.${props.thumbnail}`} alt="" />
       <div className="contents-wrap">
         {props.category.map((item, index) => {
           return <CategoryBtn key={index} theme={item} className="blue" />;
