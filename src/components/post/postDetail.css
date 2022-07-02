@@ -1,157 +1,162 @@
 .post-banner {
-  background: url(../../assets/post-background6.jpg) no-repeat center;
-  background-size: cover;
-  background-color: black;
-  width: 100%;
-  height: 380px;
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.post-banner img {
+    width: 100%;
+    height: 100%;
 }
 
 .post-banner-inside {
-  background: rgba(0, 0, 20, 0.4);
-  width: max-content;
-  height: 100%;
-  padding: 70px 13%;
-  box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 20, 0.4);
+    width: max-content;
+    height: 100%;
+    padding: 70px 13%;
+    box-sizing: border-box;
 }
 
 .post-banner-inside span {
-  display: block;
-  color: white;
-  font-weight: bold;
-  font-size: 55px;
-  margin-left: 0.5rem;
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 55px;
+    margin-left: 0.5rem;
 }
 
 .post-banner-inside span:nth-child(2) {
-  font-size: 100px;
-  line-height: 110px;
+    font-size: 100px;
+    line-height: 110px;
 }
 
 .post-wrap {
-  width: 60rem;
-  max-width: 700px;
-  margin: -10rem 0 auto 35%;
-  padding: 4rem 2rem;
-  border-radius: 20px;
-  background: #fff;
-  transition: all 0.3s;
-  position: relative;
+    width: 60rem;
+    max-width: 700px;
+    margin: -10rem 0 auto 35%;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    background: #fff;
+    transition: all 0.3s;
+    position: relative;
 }
 
 .post-inner {
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 1.6rem;
-  padding: 0 3rem;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    padding: 0 3rem;
 }
 .author-wrap {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .category-wrap {
-  margin: 1.5rem 0 0.5rem;
+    margin: 1.5rem 0 0.5rem;
 }
 
 .author-wrap img {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
 }
 
 .post-inner h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 2.5rem;
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .like-wrap {
-  text-align: right;
+    text-align: right;
 }
 
 .post-inner header {
-  border-bottom: 1px solid #dedede;
-  padding-bottom: 40px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 40px;
 }
 
 .post-main p {
-  font-size: 15px;
-  line-height: 1.8rem;
-  padding-top: 40px;
+    font-size: 15px;
+    line-height: 1.8rem;
+    padding-top: 40px;
 }
 
 .post-main img {
-  margin-top: 40px;
-  width: 100%;
+    margin-top: 40px;
+    width: 100%;
 }
 
 .btn-wrap {
-  position: absolute;
-  top: 3.5rem;
-  right: 5rem;
+    position: absolute;
+    top: 3.5rem;
+    right: 5rem;
 }
 
 @media screen and (max-width: 1260px) {
-  .post-banner-inside {
-    width: 60vw;
-    padding: 70px 10%;
-  }
+    .post-banner-inside {
+        width: 60vw;
+        padding: 70px 10%;
+    }
 
-  .post-banner-date-cont {
-    width: 280px;
-  }
+    .post-banner-date-cont {
+        width: 280px;
+    }
 
-  .post-banner-inside span {
-    display: inline-block;
-    font-size: 35px;
-  }
+    .post-banner-inside span {
+        display: inline-block;
+        font-size: 35px;
+    }
 
-  .post-banner-inside span:nth-child(2) {
-    font-size: 50px;
-    line-height: 1.2;
-  }
+    .post-banner-inside span:nth-child(2) {
+        font-size: 50px;
+        line-height: 1.2;
+    }
 
-  .post-wrap {
-    margin-top: -13rem;
-    width: 50%;
-    min-width: 400px;
-  }
+    .post-wrap {
+        margin-top: -13rem;
+        width: 50%;
+        min-width: 400px;
+    }
 }
 @media screen and (max-width: 770px) {
-  .post-banner-inside {
-    width: 100%;
-    padding: 70px 0 16px;
-  }
+    .post-banner-inside {
+        width: 100%;
+        padding: 70px 0 16px;
+    }
 
-  .post-banner-date-cont {
-    width: 100%;
-    text-align: center;
-  }
+    .post-banner-date-cont {
+        width: 100%;
+        text-align: center;
+    }
 
-  .post-wrap {
-    width: 80%;
-    margin: -13rem auto 0;
-    padding: 2rem 1rem;
-  }
+    .post-wrap {
+        width: 80%;
+        margin: -13rem auto 0;
+        padding: 2rem 1rem;
+    }
 
-  .post-inner header {
-    width: 100%;
-  }
+    .post-inner header {
+        width: 100%;
+    }
 
-  .btn-wrap {
-    top: 1.8rem;
-    right: 3rem;
-  }
+    .btn-wrap {
+        top: 1.8rem;
+        right: 3rem;
+    }
 
-  .post-inner {
-    padding: 2rem;
-  }
+    .post-inner {
+        padding: 2rem;
+    }
 
-  .author-wrap {
-    margin-left: 20px;
-  }
+    .author-wrap {
+        margin-left: 20px;
+    }
 
-  .btn-wrap {
-    top: 3.5rem;
-  }
+    .btn-wrap {
+        top: 3.5rem;
+    }
 }
