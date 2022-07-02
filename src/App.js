@@ -3,14 +3,14 @@ import MainPage from "./components/pages/MainPage";
 import PostView from "./components/pages/PostView";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainPage />}></Route>
-        <Route path="/post-view" element={<PostView />}></Route>
-      </Routes>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<MainPage />}></Route>
+                <Route path="/:postId" element={<PostView />}></Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
