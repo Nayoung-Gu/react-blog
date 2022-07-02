@@ -24,8 +24,7 @@ export default function PostDetail(props) {
                         <PreviousBtn />
                         <div className="author-wrap">
                             <img src={props.writerProfileImg} alt="" />
-                            <span className="writer">Chilli</span>
-
+                            <span className="writer">{props.writer}</span>
                             <span className="date">{props.created}</span>
                         </div>
                         <div className="category-wrap">
@@ -45,51 +44,16 @@ export default function PostDetail(props) {
                         </div>
                     </header>
                     <main className="post-main">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Inventore illum nostrum perferendis voluptas,
-                            voluptate soluta corrupti dolore quidem. Placeat,
-                            eaque! Exercitationem est facilis dolor quas odio
-                            cum incidunt repudiandae vel. Lorem ipsum dolor sit
-                            amet consectetur, adipisicing elit. Inventore illum
-                            nostrum perferendis voluptas, voluptate soluta
-                            corrupti dolore quidem. Placeat, eaque!
-                            Exercitationem est facilis dolor quas odio cum
-                            incidunt repudiandae vel. Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Inventore illum
-                            nostrum perferendis voluptas, voluptate soluta
-                            corrupti dolore quidem. Placeat, eaque!
-                            Exercitationem est facilis dolor quas odio cum
-                            incidunt repudiandae vel. Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Inventore illum
-                            nostrum perferendis voluptas, voluptate soluta
-                            corrupti dolore quidem. Placeat, eaque!
-                            Exercitationem est facilis dolor quas odio cum
-                            incidunt repudiandae vel.
-                        </p>
-                        {/* <img src={`../../`} alt="" /> */}
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Inventore illum nostrum perferendis voluptas,
-                            voluptate soluta corrupti dolore quidem. Placeat,
-                            eaque! Exercitationem est facilis dolor quas odio
-                            cum incidunt repudiandae vel. Lorem ipsum dolor sit
-                            amet consectetur, adipisicing elit. Inventore illum
-                            nostrum perferendis voluptas, voluptate soluta
-                            corrupti dolore quidem. Placeat, eaque!
-                            Exercitationem est facilis dolor quas odio cum
-                            incidunt repudiandae vel. Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Inventore illum
-                            nostrum perferendis voluptas, voluptate soluta
-                            corrupti dolore quidem. Placeat, eaque!
-                            Exercitationem est facilis dolor quas odio cum
-                            incidunt repudiandae vel. Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Inventore illum
-                            nostrum perferendis voluptas, voluptate soluta
-                            corrupti dolore quidem. Placeat, eaque!
-                            Exercitationem est facilis dolor quas odio cum
-                            incidunt repudiandae vel.
-                        </p>
+                        {props.contents.map((content, index) => {
+                            if (content.type === "img") {
+                                return (
+                                    <img src={content.src} alt="" key={index} />
+                                );
+                            }
+                            if (content.type === "p") {
+                                return <p key={index}>{content.text}</p>;
+                            }
+                        })}
                     </main>
                     <div className="btn-wrap">
                         <ModifyBtn />

@@ -35,8 +35,10 @@ function PostView() {
                 title={post["title"]}
                 categories={post["category"]}
                 writerProfileImg={post["profileImg"]}
+                writer={post["userName"]}
                 created={post["created"]}
                 date={formatDate(post["created"])}
+                contents={post["contents"]}
             />
             <Footer />
         </div>
