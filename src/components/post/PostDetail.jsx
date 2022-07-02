@@ -12,9 +12,9 @@ export default function PostDetail(props) {
                 <img src={`${props.mainBg}`} alt="" />
                 <div className="post-banner-inside">
                     <div className="post-banner-date-cont">
-                        <span>May</span>
-                        <span>25</span>
-                        <span>Wednesday</span>
+                        <span>{props.date[0]}</span>
+                        <span>{props.date[1]}</span>
+                        <span>{props.date[2]}</span>
                     </div>
                 </div>
             </div>
