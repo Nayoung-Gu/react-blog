@@ -3,14 +3,13 @@ import ModifyBtn from "./ModifyBtn";
 import DeleteBtn from "./DeleteBtn";
 import LikeBtn from "./LikeBtn";
 import CategoryBtn from "./CategoryBtn";
-import backgroundImg from "../../assets/post-background6.jpg";
-import authorData from "../../db/data.json";
 import "./postDetail.css";
 
 export default function PostDetail(props) {
     return (
         <div>
             <div className="post-banner">
+                <img src={`${props.mainBg}`} alt="" />
                 <div className="post-banner-inside">
                     <div className="post-banner-date-cont">
                         <span>May</span>
@@ -24,21 +23,23 @@ export default function PostDetail(props) {
                     <header>
                         <PreviousBtn />
                         <div className="author-wrap">
-                            <img
-                                src={`.${authorData.posts[5]["profileImg"]}`}
-                                alt="글쓴이 프로필 이미지"
-                            />
+                            <img src={props.writerProfileImg} alt="" />
                             <span className="writer">Chilli</span>
-                            <span className="date">2022.05.25</span>
+
+                            <span className="date">{props.created}</span>
                         </div>
                         <div className="category-wrap">
-                            <CategoryBtn theme="Life" className="blue" />
-                            <CategoryBtn theme="Style" className="blue" />
+                            {props.categories.map((category, index) => {
+                                return (
+                                    <CategoryBtn
+                                        key={index}
+                                        theme={category}
+                                        className="blue"
+                                    />
+                                );
+                            })}
                         </div>
-                        <h2>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </h2>
+                        <h2>{props.title}</h2>
                         <div className="like-wrap">
                             <LikeBtn />
                         </div>
@@ -66,7 +67,7 @@ export default function PostDetail(props) {
                             Exercitationem est facilis dolor quas odio cum
                             incidunt repudiandae vel.
                         </p>
-                        <img src={backgroundImg} alt="" />
+                        {/* <img src={`../../`} alt="" /> */}
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing
                             elit. Inventore illum nostrum perferendis voluptas,
