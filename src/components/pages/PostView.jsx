@@ -1,20 +1,16 @@
-import React from "react";
 import Header from "../header/Header";
 import PostDetail from "../post/PostDetail";
 import Footer from "../footer/Footer";
 import { useParams } from "react-router-dom";
 import postData from "../../db/data.json";
 
-function PostView() {
+export default function PostView() {
     const { postId } = useParams();
     const postIndex = postId - 1;
     const post = postData.posts[postIndex];
     function formatDate(when) {
         const result = [];
-        const dateArr = when.split(".");
-        const year = dateArr[0];
-        const month = dateArr[1];
-        const date = dateArr[2];
+        const [year, month, date] = when.split(".");
         const theDay = new Date(`${year}-${month}-${date}`);
         const dateString = theDay.toLocaleDateString("en-US", {
             month: "long",
@@ -44,5 +40,3 @@ function PostView() {
         </div>
     );
 }
-
-export default PostView;

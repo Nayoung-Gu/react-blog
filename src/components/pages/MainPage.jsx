@@ -4,9 +4,9 @@ import Banner from "../banner/Banner";
 import About from "../about/About";
 import PostList from "../post/PostList";
 import Footer from "../footer/Footer";
-import "./mainPage.css";
+import "./MainPage.css";
 
-function MainPage() {
+export default function MainPage() {
     return (
         <div>
             <Header />
@@ -19,5 +19,3 @@ function MainPage() {
         </div>
     );
 }
-
-export default MainPage;
