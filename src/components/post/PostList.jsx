@@ -3,7 +3,7 @@ import "./postList.css";
 import data from "../../db/data.json";
 import { Link } from "react-router-dom";
 
-export default function PostList(props) {
+export default function PostList() {
     return (
         <ul className="post-list">
             {data.posts.map((post) => (

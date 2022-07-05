@@ -1,15 +1,14 @@
 .previous-button {
-  cursor: pointer;
-  background: #f9f9f9 url(../../assets/ArrowLeft-blue.svg) no-repeat center;
-  width: 52px;
-  height: 52px;
-  border: none;
-  border-radius: 0 8px 8px 0;
-  position: absolute;
-  top: 3.5rem;
-  left: 0;
+    background: #f9f9f9 url(../../assets/ArrowLeft-blue.svg) no-repeat center;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
 }
 
 .previous-button:active {
-  box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
+    box-shadow: rgb(55, 160, 236) 0 0 2px 1px;
 }
